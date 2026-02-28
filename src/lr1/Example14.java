@@ -12,7 +12,7 @@ public class Example14 {
         int nMinus1 = n - 1;
         int nPlus1 = n + 1;
 
-        int sumFirstThree = n + nMinus1 + n;
+        int sumFirstThree = nPlus1 + nMinus1 + n;
         int fourthNumber = sumFirstThree * sumFirstThree;
 
         System.out.println("Последовательность чисел: " + nMinus1 + ", " + n + ", " + nPlus1 + "," + fourthNumber);
