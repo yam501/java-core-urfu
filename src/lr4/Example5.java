@@ -1,0 +1,18 @@
+package lr4;
+
+/**
+ * Исключение не перехвачено.
+ * RuntimeException не подходит к catch(NullPointerException) → исключение не поймано →
+ * программа аварийно завершается с трассой стека.
+ */
+public class Example5 {
+    public static void main(String[] args) {
+        try {
+            System.out.println("0");
+            throw new RuntimeException("ошибка");
+        } catch (NullPointerException e) {
+            System.out.println("1");
+        }
+        System.out.println("2");
+    }
+}
